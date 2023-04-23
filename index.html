@@ -1,7 +1,8 @@
-<h1>Will Iframe have access to top when sandboxed ? </h1>
+<h1>Will Iframe have access to top when on sandbox ? </h1>
 <div id="result"></div>
 
 <script>
 const selector = document.querySelector('#result');
-selector.textContent = top.location.href;
+selector.textContent = window.location.ancestorOrigins[0];
+console.log(window.location.ancestorOrigins)
 </script>
