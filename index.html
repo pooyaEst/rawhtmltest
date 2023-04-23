@@ -1,1 +1,7 @@
-<h1> Hello World </h1>
+<h1>Will Iframe have access to top when sandboxed ? </h1>
+<div id="result"></div>
+
+<script>
+const selector = document.querySelector('#result');
+selector.textContent = top.location.href;
+</script>
